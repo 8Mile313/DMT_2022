@@ -1,0 +1,36 @@
+name: dmt
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - ftfy=6.0  # used only in chapter 16 by the transformers library
+  - ipython=7.28  # a powerful Python shell
+  - ipywidgets=7.6  # optionally used only in chapter 12 for tqdm in Jupyter
+  - joblib=0.14  # used only in chapter 2 to save/load Scikit-Learn models
+  - jupyter=1.0  # to edit and run Jupyter notebooks
+  - matplotlib=3.4  # beautiful plots. See tutorial tools_matplotlib.ipynb
+  - nbdime=3.1  # optional tool to diff Jupyter notebooks
+  - nltk=3.6  # optionally used in chapter 3, exercise 4
+  - numexpr=2.7  # used only in the Pandas tutorial for numerical expressions
+  - numpy=1.19  # Powerful n-dimensional arrays and numerical computing tools
+  - pandas=1.3  # data analysis and manipulation tool
+  - pillow=8.3  # image manipulation library, (used by matplotlib.image.imread)
+  - pip  # Python's package-management system
+  - py-xgboost=1.4  # used only in chapter 7 for optimized Gradient Boosting
+  - xgboost=1.4.2
+  - pyglet=1.5  # used only in chapter 18 to render environments
+  - python=3.8  # Python! Not using latest version as some libs lack support
+  #- pyvirtualdisplay=2.2  # used only in chapter 18 if on headless server
+  - scikit-learn=1.0  # machine learning library
+  - scipy=1.7  # scientific/technical computing library
+  - tqdm=4.62  # a progress bar library
+  - wheel  # built-package format for pip
+  - widgetsnbextension=3.5  # interactive HTML widgets for Jupyter notebooks
+
+
+# Specific lib versions to avoid conflicts
+  - attrs=20.3
+  - click=7.1
+  - packaging=20.9
+  - six=1.15
+  - typing-extensions=3.7
